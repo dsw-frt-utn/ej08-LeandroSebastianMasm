@@ -4,7 +4,10 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            ProductHelper helper = new ProductHelper();
+            string etiqueta = helper.ObtenerEtiquetaProducto(12345, "Laptop Gamer", 1200.50m);
+
+            Console.WriteLine(etiqueta);
         }
     }
 }
